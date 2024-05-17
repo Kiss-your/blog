@@ -4,20 +4,20 @@ import { themes } from 'prism-react-renderer'
 import { GiscusConfig } from './src/components/Comment'
 import social from './data/social'
 
-const beian = '闽ICP备2020017848号-2'
-const beian1 = '闽公网安备35021102000847号'
+const beian = '蜀ICP备2022011141号-2'
+const beian1 = ''
 
 const config: Config = {
-  title: '愧怍',
+  title: '阿噗FUN',
   url: 'https://kuizuo.cn',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'kuizuo',
   projectName: 'blog',
   customFields: {
-    bio: '道阻且长，行则将至',
+    bio: '寒来暑往，情随事迁',
     description:
-      '是一个由愧怍创建的个人博客，主要分享编程开发知识和项目，该网站基于 React 驱动的静态网站生成器 Docusaurus 构建。',
+      '记录编程生活点滴，分享技术经验，探讨编程问题，关注前端技术，分享实用工具，推荐优质资源，欢迎交流学习。',
   },
   themeConfig: {
     // announcementBar: {
@@ -27,15 +27,15 @@ const config: Config = {
     metadata: [
       {
         name: 'author',
-        content: '愧怍',
+        content: '情迁',
       },
       {
         name: 'keywords',
-        content: 'blog, javascript, typescript, node, react, vue, web',
+        content: 'blog, javascript, typescript, node, vue, web, python',
       },
       {
         name: 'keywords',
-        content: '编程爱好者, Web开发者, 写过爬虫, 学过逆向, 主攻ts全栈',
+        content: '编程爱好者, Web开发者, 写过爬虫, 学过逆向',
       },
     ],
     docs: {
@@ -45,7 +45,7 @@ const config: Config = {
     },
     navbar: {
       logo: {
-        alt: '愧怍',
+        alt: '情迁',
         src: 'img/logo.webp',
         srcDark: 'img/logo.webp',
       },
@@ -118,9 +118,7 @@ const config: Config = {
       ],
       copyright: `
         <p style="margin-bottom: 0;"><a href="http://beian.miit.gov.cn/">${beian}</a></p>
-        <p style="display: inline-flex; align-items: center;"><img style="height:20px;margin-right: 0.5rem;" src="/img/police.png" alt="police" height="20"/><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=${
-          beian1.match(/\d+/)?.[0]
-        }" >${beian1}</a></p>
+
         <p>Copyright © 2020 - PRESENT 愧怍 Built with Docusaurus.</p>
         `,
     },
@@ -268,6 +266,7 @@ const config: Config = {
       },
     },
   },
+  onBrokenLinks: 'ignore',
 }
 
 export default config
